@@ -15,7 +15,7 @@
         }
 
         #content {
-            background-color: aqua;
+            background-color: rgb(15, 75, 9);
             margin: auto;
             width: 75%;
             padding: 10px;
@@ -23,7 +23,7 @@
         }
 
         #bigContainer {
-            background-color: rgb(92, 255, 255);
+            background-color: rgb(20, 133, 20);
             display: flex;
             justify-content: space-evenly;
             padding: 10px;
@@ -51,12 +51,26 @@
             border: 1px solid black;
             box-shadow: 5px 5px 1px black;
         }
+
+        #playButton {
+            text-align: center;
+        }
+
+        #playButton a, a:visited{
+            text-decoration: none;
+            color: white;
+            border: 1px solid black;
+            background-color: red;
+            font-family: arial;
+            border-radius: 3px;
+            padding: 3px;
+        }
     </style>
 </head>
 
 <body>
     <div id="content">
-        <h1>Header</h1>
+        <h1 style="color: white;">Get to School 5</h1>
         <div id="bigContainer">
             <div id="smallContainer">
                 <div class="smallBox allBoxes">
@@ -67,7 +81,10 @@
                 </div>
                 <div class="smallBox allBoxes">
                     <h2 style="text-align: center;">Game</h2>
-                    <p>Click <a href="game/index.html">here</a> to play my game</p>
+                    <p>Click the button below to play the game.</p>
+                    <div id="playButton">
+                        <a href="game/index.html">Play Game</a>
+                    </div>
                 </div>
                 <div class="smallBox allBoxes">
                     <h2 style="text-align: center;">Images</h2>
