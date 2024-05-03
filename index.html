@@ -4,89 +4,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Website</title>
     <style>
-        #content {
-            width: 70%;
-            background-color: rgb(52, 64, 51);
-            margin: auto;
+        body {
+            background-color: black;
         }
 
-        .smallBoxes {
-            width: 40%;
-            background-color: gray;
-            margin: 10px;
+        h1 {
             text-align: center;
         }
 
-        .bigBox {
+        #content {
+            background-color: aqua;
+            margin: auto;
+            width: 75%;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        #bigContainer {
+            background-color: rgb(92, 255, 255);
             display: flex;
             justify-content: space-evenly;
+            padding: 10px;
+            border-radius: 10px;
         }
 
-        .smallBoxes img {
-            width: 100%;
-            object-fit: contain;
+        #smallContainer {
+            width: 40%;
         }
 
-        #gameButton {
-            border: 2px black solid;
-            padding: 3px;
-            background-color: red;
-            border-radius: 5px;
-            text-decoration: none;
-            font-size: 20px;
+        .smallBox {
+            background-color: white;
+            margin: 10px;
+            padding: 4px;
         }
 
-        a,
-        a:visited {
-            color: black;
+        .bigBox {
+            background-color: white;
+            margin: 10px;
+            width: 40%;
+            padding: 4px;
         }
 
-        html {
-            background-color: black;
+        .allBoxes {
+            border: 1px solid black;
+            box-shadow: 5px 5px 1px black;
         }
     </style>
 </head>
 
 <body>
     <div id="content">
-        <h1 style="text-align: center; color: white;">Get to School 5</h1>
-        <div class="bigBox">
-            <div>
-                <a href="game/index.html" id="gameButton">Play Game</a>
+        <h1>Header</h1>
+        <div id="bigContainer">
+            <div id="smallContainer">
+                <div class="smallBox allBoxes">
+                    <h2 style="text-align: center;">About</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis voluptate, ut facilis adipisci
+                        quis atque placeat consequuntur! Sunt cum necessitatibus ipsum suscipit possimus omnis
+                        provident!</p>
+                </div>
+                <div class="smallBox allBoxes">
+                    <h2 style="text-align: center;">Game</h2>
+                    <p>Click <a href="game/index.html">here</a> to play my game</p>
+                </div>
+                <div class="smallBox allBoxes">
+                    <h2 style="text-align: center;">Images</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est necessitatibus fugit ullam at
+                        similique incidunt fuga ut, consequatur quibusdam facilis tenetur, alias unde corporis neque.
+                    </p>
+                </div>
+            </div>
+            <div class="bigBox allBoxes">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora nostrum mollitia blanditiis ab quod
+                    dolore magni nobis corrupti corporis harum hic sit doloribus sequi, pariatur, id expedita esse vero?
+                    Quo dolor doloremque officia iste vero nulla. Quis ipsam sapiente corrupti! Dolor blanditiis non
+                    magni dicta repellat a! Odio, cumque nihil.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi officiis natus laudantium libero vero
+                    vel ducimus dolore, iure cumque sapiente excepturi officia, mollitia a sequi error eveniet nobis.
+                    Blanditiis ducimus modi enim nisi odit ullam vero mollitia aliquam ratione similique pariatur
+                    facere, neque dolor adipisci voluptatibus, quas tenetur voluptate quisquam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad cupiditate pariatur mollitia et enim
+                    dolore distinctio quia ex autem nihil perferendis consequatur modi vitae aut suscipit, asperiores
+                    quod, minus nobis, ratione unde in veniam exercitationem aperiam cumque! Dolorum quam maxime ad
+                    consectetur quidem? Veritatis quisquam est quae ipsum, sunt cupiditate.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat mollitia eaque vel amet magni ex
+                    dicta. Delectus cupiditate ipsum reprehenderit officiis ipsam fugiat necessitatibus rerum, minima
+                    asperiores assumenda incidunt tempora, cum enim eum repellat earum odio sapiente dolores! Voluptates
+                    corporis aliquid itaque delectus assumenda numquam vero perferendis magnam unde exercitationem!</p>
             </div>
         </div>
-        <div class="bigBox">
-            <div class="smallBoxes">
-                <h2>About Me</h2>
-                <p>There's not too much to know about me except the fact that I made this game for school and that's
-                    about all you really need to know about me.</p>
-            </div>
-            <div class="smallBoxes">
-                <h2>Fun Fact</h2>
-                <p>This game has a lot of NPCs that will try to scam you so try to be on the lookout. Or don't and get
-                    scmmed maybe you will get something for it.</p>
-            </div>
-        </div>
-        <div class="bigBox">
-            <div class="smallBoxes">
-                <h2>About the Game</h2>
-                <p>The game in itself is not too complicated in just the fact that all you need to do is get too school.
-                    It sounds simple but that's not really a good game if all you had to do was walk down the block to
-                    get to school. Instead you are going to go on an adventure until you finally find your way to get to
-                    the school.</p>
-            </div>
-            <div class="smallBoxes">
-                <h2>Progress</h2>
-                <p>The game is very much not done. Not even close to being completed so don't expect to find the end of
-                    the game. There are a few places where there might be a cutoff and I know. There is not game content
-                    everywhere so don't expect for their to be game content everywhere.</p>
-            </div>
-        </div>
-
     </div>
-
 </body>
 
 </html>
