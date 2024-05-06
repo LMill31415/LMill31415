@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Game Page</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        #content {
+            margin: auto;
+            text-align: center;
+            background-color: rgb(57, 65, 57);
+            width: 80%;
+            border-radius: 20px;
+            padding: 10px;
+        }
+
+        #links {
+            border: 2px black solid;
+            width: 20%;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: black;
+        }
+
+        #links a {
+            text-decoration: none;
+            color: white;
+            background-color: blue;
+            border: 1px black solid;
+            padding: 5px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-evenly;
+            margin: 3px;
+        }
+
+        #gameMechanics {
+            border: 2px black solid;
+            padding: 5px;
+            background-color: white;
+            border-radius: 5px;
+            min-width: 25%;
+            height: 150px;
+        }
+
+        #gameplay {
+            border: 2px black solid;
+            padding: 5px;
+            background-color: white;
+            border-radius: 5px;
+            min-width: 25%;
+            height: 150px;
+        }
+
+        .bigBox {
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 10px;
+        }
+
+        .textImage {
+            display: inline;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="content">
+        <h1 style="color: white;">About Game</h1>
+        <div class="bigBox">
+            <div id="links">
+                <h2 style="color: white;">All pages</h2>
+                <a href="index.html"><strong>Home Page</strong></a>
+                <a href="aboutme.html"><strong>About Me Page</strong></a>
+                <a id="gameLink" style="border: 1px black solid;" href="game/index.html"><strong>Play Game</strong></a>
+            </div>
+            <div id="para">
+                <div id="gameMechanics">
+                    <h2>Game Mechanics</h2>
+                    <div class="textImage">
+                        <img src="https://t4.ftcdn.net/jpg/00/61/06/27/360_F_61062796_NF87GPnWV0fQ2LhoYNlyjev0PocRwZj9.jpg"
+                            alt="bank" style="width: 100px; float: left;">
+                        <p>Some of the game mechanics that you may have is a bank there are also 3 bosses at the moment.
+                            The
+                            first boss is like any starting boss, pretty easy, but after that first boss the difficulty
+                            increases. There is also a 4th boss but I don't include it because it doesn't achieve
+                            anything
+                            right now, but in the future it will lead to a new area of the world.</p>
+                    </div>
+                </div>
+                <div id="gameplay">
+                    <h2>Gameplay</h2>
+                    <div class="textImage">
+                        <img src="https://t4.ftcdn.net/jpg/05/22/69/19/360_F_522691962_fC6vXEo5v4gFKD1ZsSjwqwJMF5Y3uCxD.jpg"
+                            alt="school" style="width: 100px; float: left;">
+                        <p>The gameplay is like your average rpg where you start at your house and continue on from
+                            there.
+                            Your goal is to get to school and to do that you are given items that will help you on your
+                            journey. There are NPCs that will either help you or slow down your journey to get to
+                            school.
+                            The game has a strong difficulty curve but if you put in time and grind the bosses won't be
+                            too
+                            much of a difficulty for you.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

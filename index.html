@@ -4,66 +4,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website</title>
+    <title>Get to School 5</title>
     <style>
         body {
             background-color: black;
         }
 
-        h1 {
-            text-align: center;
-        }
-
         #content {
-            background-color: rgb(15, 75, 9);
             margin: auto;
-            width: 75%;
+            text-align: center;
+            background-color: rgb(57, 65, 57);
+            width: 80%;
+            border-radius: 20px;
             padding: 10px;
-            border-radius: 10px;
         }
 
-        #bigContainer {
-            background-color: rgb(20, 133, 20);
+        #aboutMe {
+            border: 2px black solid;
+            padding: 5px;
+            background-color: white;
+            border-radius: 5px;
+            min-width: 25%;
+            height: 190px;
+        }
+
+        #aboutGame {
+            border: 2px black solid;
+            padding: 5px;
+            background-color: white;
+            border-radius: 5px;
+            min-width: 25%;
+            height: 180px;
+        }
+
+        #links {
+            border: 2px black solid;
+            width: 20%;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: black;
+        }
+
+        #links a {
+            text-decoration: none;
+            color: white;
+            background-color: blue;
+            border: 1px black solid;
+            padding: 5px;
+            border-radius: 5px;
             display: flex;
             justify-content: space-evenly;
-            padding: 10px;
-            border-radius: 10px;
-        }
-
-        #smallContainer {
-            width: 40%;
-        }
-
-        .smallBox {
-            background-color: white;
-            margin: 10px;
-            padding: 4px;
+            margin: 3px;
         }
 
         .bigBox {
-            background-color: white;
-            margin: 10px;
-            width: 40%;
-            padding: 4px;
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 10px;
         }
 
-        .allBoxes {
-            border: 1px solid black;
-            box-shadow: 5px 5px 1px black;
-        }
-
-        #playButton {
-            text-align: center;
-        }
-
-        #playButton a, a:visited{
-            text-decoration: none;
-            color: white;
-            border: 1px solid black;
-            background-color: red;
-            font-family: arial;
-            border-radius: 3px;
-            padding: 3px;
+        .textImage {
+            display: inline;
         }
     </style>
 </head>
@@ -71,45 +72,46 @@
 <body>
     <div id="content">
         <h1 style="color: white;">Get to School 5</h1>
-        <div id="bigContainer">
-            <div id="smallContainer">
-                <div class="smallBox allBoxes">
-                    <h2 style="text-align: center;">About</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis voluptate, ut facilis adipisci
-                        quis atque placeat consequuntur! Sunt cum necessitatibus ipsum suscipit possimus omnis
-                        provident!</p>
-                </div>
-                <div class="smallBox allBoxes">
-                    <h2 style="text-align: center;">Game</h2>
-                    <p>Click the button below to play the game.</p>
-                    <div id="playButton">
-                        <a href="game/index.html">Play Game</a>
+        <div class="bigBox">
+            <div id="links">
+                <h2 style="color: white;">All pages</h2>
+                <a href="aboutme.html"><strong>About Me Page</strong></a>
+                <a href="aboutgame.html"><strong>About Game Page</strong></a>
+                <a id="gameLink" style="border: 1px black solid;" href="game/index.html"><strong>Play Game</strong></a>
+            </div>
+            <div>
+
+                <div id="aboutMe">
+                    <h2>About Me</h2>
+                    <div class="textImage">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFVFXdhiumuUYVOwIbsIb5Ao_z1gRDGCsMdr0HoEFIvw&s"
+                            alt="gaming" style="width: 150px; float: left;">
+                        <p>This text is only a brief overview of what you will find in the actually about me page. I
+                            have
+                            experience in programming but when it comes down to it, I don't actually have that much
+                            experience.
+                            My hobbies are chess, programming, and gaming and the one I do the most is gaming and chess.
+                            I
+                            want
+                            to improve on the programming part.
+                        </p>
                     </div>
                 </div>
-                <div class="smallBox allBoxes">
-                    <h2 style="text-align: center;">Images</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est necessitatibus fugit ullam at
-                        similique incidunt fuga ut, consequatur quibusdam facilis tenetur, alias unde corporis neque.
-                    </p>
+                <div id="aboutGame">
+                    <h2>About Game</h2>
+                    <div class="textImage">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiWwrojwNdhe5KbZvxIWboUoVs-mBzjiryYSXcq_MyWw&s"
+                            alt="money bag" style="width: 100px; float: left;">
+                        <p>The game isn't really complete in the fact that you can never get to school, so this is only
+                            for
+                            the
+                            overview of the game is about. The game is about trying to get to school but you can't just
+                            walk
+                            there and have to get through a lot of obstacles on the way. Watch out for the biggest
+                            threat,
+                            getting scammed, trust no one because scammers are everywhere.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="bigBox allBoxes">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora nostrum mollitia blanditiis ab quod
-                    dolore magni nobis corrupti corporis harum hic sit doloribus sequi, pariatur, id expedita esse vero?
-                    Quo dolor doloremque officia iste vero nulla. Quis ipsam sapiente corrupti! Dolor blanditiis non
-                    magni dicta repellat a! Odio, cumque nihil.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi officiis natus laudantium libero vero
-                    vel ducimus dolore, iure cumque sapiente excepturi officia, mollitia a sequi error eveniet nobis.
-                    Blanditiis ducimus modi enim nisi odit ullam vero mollitia aliquam ratione similique pariatur
-                    facere, neque dolor adipisci voluptatibus, quas tenetur voluptate quisquam.</p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad cupiditate pariatur mollitia et enim
-                    dolore distinctio quia ex autem nihil perferendis consequatur modi vitae aut suscipit, asperiores
-                    quod, minus nobis, ratione unde in veniam exercitationem aperiam cumque! Dolorum quam maxime ad
-                    consectetur quidem? Veritatis quisquam est quae ipsum, sunt cupiditate.</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat mollitia eaque vel amet magni ex
-                    dicta. Delectus cupiditate ipsum reprehenderit officiis ipsam fugiat necessitatibus rerum, minima
-                    asperiores assumenda incidunt tempora, cum enim eum repellat earum odio sapiente dolores! Voluptates
-                    corporis aliquid itaque delectus assumenda numquam vero perferendis magnam unde exercitationem!</p>
             </div>
         </div>
     </div>
